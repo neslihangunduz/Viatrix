@@ -7,7 +7,7 @@ from PyPDF2 import PdfReader
 import fitz  # this is pymupdf
 from PIL import Image
 import PIL
-#
+
 load_dotenv()
 genai.configure(api_key="AIzaSyCIyVGIaXqM4oMfH-KnjQdHDQPoiNyTFpI")
 
