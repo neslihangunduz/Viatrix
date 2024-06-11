@@ -1,12 +1,7 @@
-import os
-import io
 import google.generativeai as genai
 import streamlit as st
-from dotenv import load_dotenv
-from PyPDF2 import PdfReader
-import fitz  # this is pymupdf
 from PIL import Image
-import PIL
+from dotenv import load_dotenv
 
 load_dotenv()
 genai.configure(api_key="AIzaSyCIyVGIaXqM4oMfH-KnjQdHDQPoiNyTFpI")
@@ -138,21 +133,21 @@ if choice == "Viatrix":
     st.write("")
 
     # Şehir listesi (Şehir ekle)
-    cities = ['Adana', 'Adıyaman', 'Afyonkarahisar', 'Ağrı','Aksaray','Amasya','Ankara','Antalya','Ardahan','Artvin',
-              'Aydın','Balıkesir','Bartın','Batman','Bayburt','Bilecik','Bingöl','Bitlis','Bolu','Burdur','Bursa',
-              'Çanakkale','Çankırı','Çorum','Denizli','Diyarbakır','Düzce','Edirne','Elazığ','Erzincan','Erzurum',
-              'Eskişehir','Gaziantep','Giresun','Gümüşhane','Hakkâri','Hatay','Iğdır','Isparta','İstanbul','İzmir',
-              'Kahramanmaraş','Karabük','Karaman','Kars','Kastamonu','Kayseri','Kilis','Kırıkkale','Kırklareli',
-              'Kırşehir','Kocaeli','Konya','Kütahya','Malatya','Manisa','Mardin','Mersin','Muğla','Muş','Nevşehir',
-              'Niğde','Ordu','Osmaniye','Rize','Sakarya','Samsun','Şanlıurfa','Siirt','Sinop','Sivas','Şırnak',
-              'Tekirdağ','Tokat','Trabzon','Tunceli','Uşak','Van','Yalova','Yozgat','Zonguldak'
-              ]
+    #cities = ['Adana', 'Adıyaman', 'Afyonkarahisar', 'Ağrı','Aksaray','Amasya','Ankara','Antalya','Ardahan','Artvin',
+              #'Aydın','Balıkesir','Bartın','Batman','Bayburt','Bilecik','Bingöl','Bitlis','Bolu','Burdur','Bursa',
+              #'Çanakkale','Çankırı','Çorum','Denizli','Diyarbakır','Düzce','Edirne','Elazığ','Erzincan','Erzurum',
+              #'Eskişehir','Gaziantep','Giresun','Gümüşhane','Hakkâri','Hatay','Iğdır','Isparta','İstanbul','İzmir',
+              #'Kahramanmaraş','Karabük','Karaman','Kars','Kastamonu','Kayseri','Kilis','Kırıkkale','Kırklareli',
+              #'Kırşehir','Kocaeli','Konya','Kütahya','Malatya','Manisa','Mardin','Mersin','Muğla','Muş','Nevşehir',
+             #'Niğde','Ordu','Osmaniye','Rize','Sakarya','Samsun','Şanlıurfa','Siirt','Sinop','Sivas','Şırnak',
+              #'Tekirdağ','Tokat','Trabzon','Tunceli','Uşak','Van','Yalova','Yozgat','Zonguldak'
+              #]
 
 
-    selected_city = st.selectbox('Şehir Seçin', cities)
+    #selected_city = st.selectbox('Şehir Seçin', cities)
     selected_spots = st.text_input('Hangi harika yerleri keşfetmek istiyorsunuz?', placeholder='Bir yer adı yazın...')
 
-    st.write('Seçilen şehir:', selected_city)
+    #st.write('Seçilen şehir:', selected_city)
 
     # Seçilen şehre göre turistik yer listesi
 
