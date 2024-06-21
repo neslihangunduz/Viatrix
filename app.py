@@ -84,7 +84,7 @@ if choice == "Ana Sayfa":
     image_file_path1 = "C:\\Users\\nesli\\PycharmProjects\\RoamGuide\\dünya_haritası.png"
     image1 = load_image(image_file_path1)
 
-    # Streamlit arayüzünde görüntüyü gösterme
+    # Streamlit arayüzünde görüntüyü gösterme.
     st.image(image1)
     st.subheader(
         '"Yolculuk, bir noktadan diğerine gitmek değil, öğrenmek, keşfetmek ve değişmektir." \n – Ursula K. Le Guin')
