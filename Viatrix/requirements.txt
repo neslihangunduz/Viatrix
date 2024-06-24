@@ -1,0 +1,15 @@
+streamlit
+pandas
+Geopy
+Requests
+numpy
+matplotlib
+openpyxl
+PyPDF2
+docx2txt
+pdf2image
+plotly
+pillow
+python-dotenv
+generativeai
+jupyter
