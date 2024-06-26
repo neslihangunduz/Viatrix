@@ -57,7 +57,7 @@ def get_gemini_response(prompt):
 
 
 st.set_page_config(
-    page_title="RoamGuide",
+    page_title="Viatrix",
     page_icon="🗺️",
     initial_sidebar_state="expanded"
 )
