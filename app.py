@@ -134,10 +134,6 @@ if choice == "Viatrix":
 
     st.write("")
 
-
-
-
-
     selected_spots = st.text_input('Hangi harika yerleri keşfetmek istiyorsunuz?', placeholder='Bir yer adı yazın...')
 
 
