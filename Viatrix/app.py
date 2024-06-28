@@ -134,37 +134,9 @@ if choice == "Viatrix":
 
     st.write("")
 
-    # Şehir listesi (Şehir ekle)
-    #cities = ['Adana', 'Adıyaman', 'Afyonkarahisar', 'Ağrı','Aksaray','Amasya','Ankara','Antalya','Ardahan','Artvin',
-              #'Aydın','Balıkesir','Bartın','Batman','Bayburt','Bilecik','Bingöl','Bitlis','Bolu','Burdur','Bursa',
-              #'Çanakkale','Çankırı','Çorum','Denizli','Diyarbakır','Düzce','Edirne','Elazığ','Erzincan','Erzurum',
-              #'Eskişehir','Gaziantep','Giresun','Gümüşhane','Hakkâri','Hatay','Iğdır','Isparta','İstanbul','İzmir',
-              #'Kahramanmaraş','Karabük','Karaman','Kars','Kastamonu','Kayseri','Kilis','Kırıkkale','Kırklareli',
-              #'Kırşehir','Kocaeli','Konya','Kütahya','Malatya','Manisa','Mardin','Mersin','Muğla','Muş','Nevşehir',
-             #'Niğde','Ordu','Osmaniye','Rize','Sakarya','Samsun','Şanlıurfa','Siirt','Sinop','Sivas','Şırnak',
-              #'Tekirdağ','Tokat','Trabzon','Tunceli','Uşak','Van','Yalova','Yozgat','Zonguldak'
-              #]
-
-
-    #selected_city = st.selectbox('Şehir Seçin', cities)
+   
     selected_spots = st.text_input('Hangi harika yerleri keşfetmek istiyorsunuz?', placeholder='Bir yer adı yazın...')
 
-    #st.write('Seçilen şehir:', selected_city)
-
-    # Seçilen şehre göre turistik yer listesi
-
-        #'İstanbul': ['Ayasofya', 'Topkapı Sarayı', 'Sultanahmet Camii'],
-        #'Ankara': ['Anıtkabir', 'Etnografya Müzesi', 'Atatürk Orman Çiftliği'],
-        #'İzmir': ['Konak Meydanı', 'Asansör', 'Kemeraltı Çarşısı'],
-        #'Bursa': ['Ulu Camii', 'Uludağ', 'Tophane Saat Kulesi'],
-        #'Antalya': ['Kaleiçi', 'Düden Şelalesi', 'Perge Antik Kenti']
-
-
-    #if selected_city in tourist_spots:
-        #selected_spot = st.selectbox('Turistik Yer Seçin', tourist_spots[selected_city])
-        #st.write('Seçilen turistik yer:', selected_spot)
-    #else:
-        #st.write('Bu şehre ait turistik yerler bulunmamaktadır.')
     selected_city = st.button("Yer Seç")
 
     if selected_city:
