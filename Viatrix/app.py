@@ -1,4 +1,4 @@
-!pip install google-generativeai
+
 import os
 import google.generativeai as genai
 import streamlit as st
@@ -6,7 +6,7 @@ from PIL import Image
 from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=os.getenv("AIzaSyCIyVGIaXqM4oMfH-KnjQdHDQPoiNyTFpI"))
 
 
 @st.cache_resource
